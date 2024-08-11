@@ -4,7 +4,7 @@ app = Flask(__name__)
 
 @app.route('/inicio')
 def inicio():
-    return "hola mundo desde el backend"
+    return "hola mundo desde el backend XD"
 
 @app.route('/contacto')
 def contacto():
