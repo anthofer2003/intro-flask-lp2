@@ -29,3 +29,19 @@ pip install -r paquetes.txt
 ```
 git pull
 ```
+
+#### crear ramas hijas
+```
+git checkout -b rama-hija
+```
+
+#### moverse entre ramas
+```
+git checkout nombrerama
+```
+
+#### mostrar las ramas, incluida la que esta en uso
+```
+git branch
+```
+```

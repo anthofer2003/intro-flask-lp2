@@ -17,7 +17,8 @@ def contacto2():
 @app.route('/guardar-mascota', methods=['POST'])
 def guardarMascota():
     print(request.form)
-    return "ya llego tu mascota al servidor"
+    nombreMascota = request.form.get('txtNombreMascota')
+    return f"Ya llego tu mascota <strong>{nombreMascota}</strong> al servidor"
 
 # se pregunta por el proceso principal
 if __name__=='__main__':
