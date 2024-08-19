@@ -14,6 +14,16 @@ def contacto():
 def contacto2():
     return render_template('contacto.html')
 
+@app.route('/ciudades')
+def ciudades():
+    return render_template('ciudades.html')
+
+@app.route('/guardar-mascota', methods=['POST'])
+def guardarMascota():
+    print(request.form)
+    nombreMascota = request.form.get('txtDescripcion')
+    return f (request.form.get('txtNombreMascota'))
+
 @app.route('/guardar-mascota', methods=['POST'])
 def guardarMascota():
     print(request.form)
