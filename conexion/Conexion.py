@@ -1,11 +1,11 @@
-import psycopg2 
+import psycopg2
 
 class Conexion:
 
-    """Metodo constructor de tu perro
+    """Metodo constructor
     """
     def __init__(self):
-        self.con = psycopg2.connect("dbname=veterinaria-db user=anthofer password=fervaldez2003")
+        self.con = psycopg2.connect("dbname=veterinaria-db user=juandba host=localhost password=admin")
 
     """getConexion
 
