@@ -19,6 +19,13 @@ def contacto():
 def contacto2():
     return render_template('contacto.html')
 
+@app.route('/ciudades-index')
+def ciudades_index():
+    # Creacion de la instancia de ciudaddao
+    ciudadDao = CiudadDao()
+    lista_ciudades = ciudadDao.getCiudades()
+    return render_template('ciudades-index.html', lista_ciudades=lista_ciudades)
+
 @app.route('/ciudades')
 def ciudades():
     return render_template('ciudades.html')
@@ -51,8 +58,3 @@ def guardarMascota():
 # se pregunta por el proceso principal
 if __name__=='__main__':
     app.run(debug=True)
-
-
-
-
-
